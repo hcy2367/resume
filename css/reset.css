@@ -1,0 +1,33 @@
+﻿/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li,h1, h2, h3, h4, h5, h6, pre, code,form, fieldset, legend, input, button,textarea, p, blockquote, th, td,select {margin: 0;padding: 0;}
+
+fieldset, img {border: 0 none;}
+
+img {vertical-align: top;}
+
+:focus {outline: 0;}
+
+/*input[type=text]:focus,input[type=password]:focus,textarea:focus{outline:0}*/
+address, caption, cite, code, dfn, em, strong, th, var, optgroup {font-style: normal; font-weight: normal;}
+
+/*重置标题为body正常字体大小，需要时可另行设置*/
+h1, h2, h3, h4, h5, h6 {font-size: 100%; font-weight: normal;}
+
+abbr, acronym {border: 0;font-variant: normal;}
+
+/*表单元素样式不会自动继承body样式，所以要设置其继承body的样式，或者像最后一行设置也可以*/
+input, button, textarea,select, optgroup, option {font-family: arial;font-size: inherit;font-style: inherit; font-weight: inherit;}
+
+code, kbd, samp, tt {font-size: 100%;}
+
+input, button, textarea, select {*font-size: 100%; font-style: normal; font-variant: normal;}
+
+ol, ul {list-style: none;}
+
+/*form*/
+input,select,label{vertical-align:middle}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+
+caption, th {text-align: left;}

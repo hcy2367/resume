@@ -1,0 +1,278 @@
+/*update by hcy 2013-10-1*/
+a {
+	text-decoration: none;
+	color: #999;
+}
+a:hover {
+	text-decoration: underline;
+}
+/*通用样式*/
+/*clear float*/
+.clearfix:after { 
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden; 
+}
+
+.clearfix {
+	_zoom: 1; /*针对IE6*/
+}
+.dn {
+	display: none;
+}
+
+body {
+	background: #eff0f0;
+	font: 14px/1.6 "微软雅黑", Arial,"SimSun",sans-serif;
+}
+.container {
+	position: relative;
+	width: 100%;
+	height: 1000px;
+	margin: 0 auto;
+}
+.hello {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	height: 300px;
+	width: 500px;
+	/*border: 1px solid #ccc;*/
+	margin-left: -250px;
+	margin-top: -150px;
+}
+.hello ul {
+	margin-top: 20px;
+	height: 100px;
+}
+.hello li {
+	float: left;
+	display: inline;
+	width: 20%;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #fff;
+}
+.animElem1, .animElem2, .animElem3, .animElem4, .animElem5 { /*动画元素*/
+	position: absolute;
+	top: 0;
+	height: 100px;
+	width: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	color: #fff;
+	z-index: 1;
+	cursor: pointer;
+}
+.animElem1 {
+	left: 381.5px;
+}
+.animElem2 {
+	left: 481.5px;
+}
+.animElem3 {
+	left: 581.5px;
+}
+.animElem4 {
+	left: 681.5px;
+}
+.animElem5 {
+	left: 781.5px;
+}
+.rotate10 { /*旋转10度*/
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	-o-transform: rotate(10deg);
+	transform: rotate(10deg);
+}
+.rotate-10 { /*逆向旋转10度*/
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+.animElem1:hover, .animElem2:hover, .animElem3:hover, .animElem4:hover, .animElem5:hover {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+	z-index: 10;
+}
+
+
+.hello li.item1, .animElem1 { /*动画元素背景色*/
+	background-color: rgba(255, 187, 57, 0.6);
+}
+.hello li.item2, .animElem2 {
+	background-color: rgba(211, 129, 226, 0.6);
+}
+.hello li.item3, .animElem3 {
+	background-color: rgba(164, 222, 158, 0.6);
+}
+.hello li.item4, .animElem4 {
+	background-color: rgba(108, 195, 223, 0.6);
+}
+.hello li.item5, .animElem5 {
+	background-color: rgba(246, 122, 190, 0.6);
+}
+
+.hello h3 {
+	font-size: 30px;
+	color: #8e8e8e;
+	text-align: center;
+	margin-top: 20px;
+}
+.hello p strong {
+	font-size: 20px;
+	float: right;
+	color: rgba(71, 146, 255, 0.8);
+	margin-right: 110px;
+	box-shadow: 1px 1px 2px #8e8e8e;
+	text-shadow: 2px 2px 1px #eee;
+}
+.nextBtn { /*next 按钮*/
+	height: 50px;
+	width: 50px;
+	background-color: rgb(255, 187, 57);
+	transition: all 0.18s ease-out;
+	color: #FFF;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 5px;
+	margin: 30px 0 0 450px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+}
+.nextBtn:hover {
+	background-color: rgba(255, 187, 57, 0.6);
+}
+
+.loading { /*加载*/
+	color: #999999;
+    font-size: 20px;
+    font-weight: bold;
+    height: 100px;
+    line-height: 100px;
+    margin-top: -50px;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+
+.returnBtn { /*返回顶部按钮*/
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	width: 50px;
+	height: 50px;
+	background: url(../images/topButton.png) no-repeat 0 0;
+	z-index: 999;
+	cursor: pointer;
+}
+
+/*关于本人模块*/
+.about { 
+	position: absolute;
+	top: 1000px;
+	left: 10%;
+	width: 30%;
+	height: 800px;
+}
+.about h3, .contact h3, .experience h3 {
+	background-color: #F3F3F3;
+    color: #999999;
+    font-size: 16px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    box-shadow: 1px 1px 1px #ddd;
+}
+.about p {
+	margin-bottom: 20px;
+	color: #666;
+	font-size: 14px;
+}
+.about p strong, .about p span {
+	float: left;
+}
+.about p strong {
+	color: #333333;
+    font-size: 24px;
+    margin-right: 5px;
+    margin-top: -8px;
+}
+
+/*经验模块*/
+.experience {
+	position: absolute;
+	top: 1800px; /*container的高度*/
+	left: 20%;
+	width: 60%;
+	height: 1200px;
+}
+.experience ul {
+	border: 1px solid #ddd;
+}
+.experience ul li {
+	float: left;
+	display: inline;
+	height: 300px;
+	width: 50%;
+}
+.experience ul li .imgZone {
+	height: 200px;
+	width: 300px;
+	margin: 10px auto;
+	border: 1px solid #ccc;
+}
+.experience ul li .desc {
+	text-align: center;
+	color: #666;
+	font-size: 14px;
+}
+
+
+/*联系模块*/
+.contact { 
+	position: absolute;
+	top: 3000px; /*container的高度*/
+	right: 10%;
+	width: 45%;
+	border: 1px solid #ccc;
+}
+.contact ol li {
+	float: left;
+	display: inline;
+	width: 50%;
+	height: 24px;
+	line-height: 24px;
+	font-size: 14px;
+	color: #aaa;
+}
+.contact ol li a:hover {
+	font-size: 16px;
+	transform: scale(1.2);
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	box-shadow: 1px 1px 2px #ccc;
+	background-color: #9ab837;
+	color: #FFF;
+	font-size: 24px;
+}
