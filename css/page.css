@@ -71,21 +71,7 @@ body {
 	z-index: 1;
 	cursor: pointer;
 }
-.animElem1 {
-	left: 381.5px;
-}
-.animElem2 {
-	left: 481.5px;
-}
-.animElem3 {
-	left: 581.5px;
-}
-.animElem4 {
-	left: 681.5px;
-}
-.animElem5 {
-	left: 781.5px;
-}
+
 .rotate10 { /*旋转10度*/
 	-webkit-transform: rotate(10deg);
 	-moz-transform: rotate(10deg);
@@ -146,7 +132,7 @@ body {
 	line-height: 50px;
 	text-align: center;
 	border-radius: 5px;
-	margin: 30px 0 0 450px;
+	margin: 30px 0 0 100%;
 	cursor: pointer;
 	font-size: 20px;
 	font-weight: bold;
@@ -194,7 +180,7 @@ body {
     font-weight: bold;
     height: 30px;
     line-height: 30px;
-    box-shadow: 1px 1px 1px #ddd;
+    box-shadow: 2px 2px 5px #ddd;
 }
 .about p {
 	margin-bottom: 20px;
@@ -227,6 +213,10 @@ body {
 	display: inline;
 	height: 300px;
 	width: 50%;
+}
+.experience ul li.current {
+	background-color: rgba(108, 195, 223, 0.4);
+	box-shadow: 1px 1px 2px #ddd;
 }
 .experience ul li .imgZone {
 	height: 200px;
@@ -275,4 +265,110 @@ body {
 	background-color: #9ab837;
 	color: #FFF;
 	font-size: 24px;
+}
+
+/*##################################################################*/
+/*响应式布局*/
+@media screen and (max-width: 480px) {
+	.loading { /*加载*/
+	    font-size: 16px;
+	    height: 50px;
+	    line-height: 50px;
+	    margin-top: -25px;
+	    top: 50%;
+	    width: 100%;
+	}
+	.hello {
+		top: 20%;
+		left: 50%;
+		height: 200px;
+		width: 250px;
+		margin-left: -125px;
+		margin-top: -100px;
+	}
+	.hello ul {
+		margin-top: 10px;
+		height: 50px;
+	}
+	.hello li {
+		height: 50px;
+		line-height: 50px;
+		font-size: 20px;
+	}
+	.animElem1, .animElem2, .animElem3, .animElem4, .animElem5 { /*动画元素*/
+		height: 50px;
+		width: 50px;
+		line-height: 50px;
+		font-size: 20px;
+	}
+	.hello h3 {
+		font-size: 20px;
+	}
+	.hello p strong {
+		font-size: 18px;
+		margin-right: 2%;
+	}
+	.nextBtn { /*next 按钮*/
+		height: 30px;
+		width: 40px;
+		line-height: 30px;
+		border-radius: 3px;
+		margin: 30px 0 0 96%;
+		font-size: 16px;
+	}
+	.returnBtn { /*返回顶部按钮*/
+		position: fixed;
+		right: 5px;
+		bottom: 20px;
+		width: 40px;
+		z-index: 9999;
+		height: 40px;
+		background: url(../images/topButton.png) no-repeat 0 0;
+		background-size: 80%;
+	}
+	.about { 
+		left: 5%;
+		width: 70%;
+	}
+	.experience {
+		left: 5%;
+		width: 90%;
+	}
+	.experience ul li {
+		float: none;
+		display: inline-block;
+		height: 150px;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.experience ul li .imgZone {
+		width: 50%;
+		height: 100px;
+		margin: 0 auto;
+	}
+	.imgZone img {
+		width: 150px;
+		height: 100px;
+	}
+	.special {
+		margin-left: 90%;
+	}
+	.contact { 
+		position: absolute;
+		right: 5%;
+		width: 90%;
+		border: 1px solid #ccc;
+	}
+	.contact ol li.percent25 { /*宽度25%*/
+		width: 25%;
+	}
+	.contact ol li.percent75 {/*宽度75%*/
+		width: 75%;
+	}
+	.footer {
+		height: 30px;
+		line-height: 30px;
+		font-size: 18px;
+	}
+	
 }
