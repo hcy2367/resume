@@ -2,10 +2,21 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" /><!--禁止缩放-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 	<title>hcy's简历</title>
 	<link rel="shortcut icon" href="images/favicon.ico" />
 	<link type="text/css" href="css/reset.css?v2013101" rel="stylesheet" />
 	<link type="text/css" href="css/page.css?v2013101" rel="stylesheet" />
+	<!-- html5.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+	<!--IE9以下不支持媒体查询-->
+	<!--[if lt IE 9]>  
+	    <script src="js/css3-mediaqueries.js"></script> 
+	<![endif]-->  
 </head>
 <body style="height:4000px;">
 	<div class="loading">
@@ -14,14 +25,14 @@
 	<div class="returnBtn dn"></div><!--返回顶部按钮-->
 	
 	<!--动画模块-->
-	<div class="container dn">
+	<article class="container dn">
 		<span class="animElem1">H</span> <!--动画元素-->
 		<span class="animElem2">E</span>
 		<span class="animElem3">L</span>
 		<span class="animElem4">L</span>
 		<span class="animElem5">O</span>
 
-		<div class="hello"> <!--hello 模块-->
+		<section class="hello"> <!--hello 模块-->
 			<ul class="clearfix">
 				<!--
 				<li class="item1">H</li>
@@ -33,85 +44,98 @@
 			<h3 class="dn">My name is</h3>
 			<p class="clearfix"><strong class="hcy dn">黄昌运</strong></p>
 			<div class="nextBtn dn">next</div>
-		</div>
-	</div>
+		</section>
+	</article>
 	
 	<!--关于模块-->
-	<div class="about dn">
-		<h3>about me</h3>
-		<p>学校：广东工业大学 <br/> 专业：计算机科学与技术</p>
-		<p class="clearfix"><strong>我</strong><span>是一名应届毕业生，目前在找一份合适的工作...</span></p>
-		<p>热衷互联网，爱折腾前端，php有所了解，也正在学习design，虽然技术和经验不足，但正在努力ing</p>
-		<p class="clearfix"><strong>求</strong><span>一份前端开发的职位</span></p>
+	<article class="about dn">
+		<header>
+			<h3>about me</h3>
+			<section>
+				<p>学校：广东工业大学 <br/> 专业：计算机科学与技术</p>
+				<p class="clearfix"><strong>我</strong><span>是一名应届毕业生，目前在找一份合适的工作...</span></p>
+				<p>热衷互联网，爱折腾前端，php有所了解，也正在学习design，虽然技术和经验不足，但正在努力ing</p>
+				<p class="clearfix"><strong>求</strong><span>一份前端开发的职位</span></p>
+			</section>
+		</header>
 
-		<div class="nextBtn" style="margin-left:400px;">next</div>
-	</div>
+		<div class="nextBtn">next</div>
+	</article>
 	
 	<!--经验模块-->
-	<div class="experience dn">
-		<h3>experience</h3>
-		<ul class="clearfix">
-			<li>
-				<div class="imgZone"><img src="images/image1.jpg" alt="订么商家平台" height="200" width="300" /></div>
-				<p class="desc">2013-7 订么商家平台</p>
-				<p class="desc">基于bootstrap的后台UI模板开发</p>
-				<p class="desc">
-					website：<a href="http://portal.dingmore.com/login" target="_blank">http://portal.dingmore.com/login</a>
-				</p>
-			</li>
-			<li>
-				<div class="imgZone">
-					<img src="images/image2.jpg" alt="订么官网" height="200" width="300" />
-				</div>
-				<p class="desc">2013-8 订么官网</p>
-				<p class="desc">负责订么官网前端模块开发</p>
-				<p class="desc">
-					website：<a href="http://www.dingmore.com/" target="_blank">http://www.dingmore.com/</a>
-				</p>
-			</li>
-			<li>
-				<div class="imgZone">
-					<img src="images/image3.jpg" alt="订么webapp" height="200" width="300" />
-				</div>
-				<p class="desc">2013-9 微信版外卖webapp</p>
-				<p class="desc">webapp移动端开发</p>
-				<p class="desc">
-					手机测试地址：<a href="http://webapptest.dingmore.com/" target="_blank">http://webapptest.dingmore.com/</a>
-				</p>
-			</li>
-			<li>
-				<div class="imgZone">
-					<img src="images/image4.jpg" alt="Cyer框架" height="200" width="300" />
-				</div>
-				<p class="desc">2013-3 轻量、小巧的js框架</p>
-				<p class="desc">Cyer框架的设计和实现</p>
-				<p class="desc">
-					website：<a href="https://github.com/hcy2367/Cyer" target="_blank">https://github.com/hcy2367/Cyer</a>
-				</p>
-			</li>
-		</ul>
+	<article class="experience dn">
+		<header>
+			<h3>experience</h3>
+			<section>
+				<ul class="clearfix">
+					<li>
+						<div class="imgZone">
+							<img src="images/image4.jpg" alt="Cyer框架" height="200" width="300" />
+						</div>
+						<p class="desc">2013-3 轻量、小巧的js框架</p>
+						<p class="desc">Cyer框架的设计和实现</p>
+						<p class="desc">
+							website：<a href="https://github.com/hcy2367/Cyer" target="_blank">https://github.com/hcy2367/Cyer</a>
+						</p>
+					</li>
+					<li>
+						<div class="imgZone"><img src="images/image1.jpg" alt="订么商家平台" height="200" width="300" /></div>
+						<p class="desc">2013-7 订么商家平台</p>
+						<p class="desc">基于bootstrap的后台UI模板开发</p>
+						<p class="desc">
+							website：<a href="http://portal.dingmore.com/login" target="_blank">http://portal.dingmore.com/login</a>
+						</p>
+					</li>
+					<li>
+						<div class="imgZone">
+							<img src="images/image2.jpg" alt="订么官网" height="200" width="300" />
+						</div>
+						<p class="desc">2013-8 订么官网</p>
+						<p class="desc">负责订么官网前端模块开发</p>
+						<p class="desc">
+							website：<a href="http://www.dingmore.com/" target="_blank">http://www.dingmore.com/</a>
+						</p>
+					</li>
+					<li>
+						<div class="imgZone">
+							<img src="images/image3.jpg" alt="订么webapp" height="200" width="300" />
+						</div>
+						<p class="desc">2013-9 微信版外卖webapp</p>
+						<p class="desc">webapp移动端开发</p>
+						<p class="desc">
+							手机测试地址：<a href="http://webapptest.dingmore.com/" target="_blank">http://webapptest.dingmore.com/</a>
+						</p>
+					</li>
+				</ul>
+			</section>
+		</header>
 
-		<div class="nextBtn" style="margin-left:800px;">next</div>
-	</div>
+		<div class="nextBtn special">next</div>
+	</article>
 	
 	<!--联系模块-->
-	<div class="contact dn">
-		<h3>contact me</h3>
-		<ol class="clearfix">
-			<li>新浪微博：</li>
-			<li><a href="http://weibo.com/hcy2367" target="_blank">http://weibo.com/hcy2367</a></li>
-			<li>E-mail：</li>
-			<li>hcy2367@163.com</li>
-			<li>Blog：</li>
-			<li><a href="http://www.cnblogs.com/cyStyle/" target="_blank">http://www.cnblogs.com/cyStyle/</a></li>
-			<li>github：</li>
-			<li><a href="https://github.com/hcy2367" target="_blank">https://github.com/hcy2367</a></li>
-		</ol>
-	</div>
+	<article class="contact dn">
+		<header>
+			<h3>contact me</h3>
+			<section>
+				<ol class="clearfix">
+					<li>新浪微博：</li>
+					<li><a href="http://weibo.com/hcy2367" target="_blank">http://weibo.com/hcy2367</a></li>
+					<li>E-mail：</li>
+					<li>hcy2367@163.com</li>
+					<li>Blog：</li>
+					<li><a href="http://www.cnblogs.com/cyStyle/" target="_blank">http://www.cnblogs.com/cyStyle/</a></li>
+					<li>github：</li>
+					<li><a href="https://github.com/hcy2367" target="_blank">https://github.com/hcy2367</a></li>
+				</ol>
+			</section>
+		</header>
+	</article>
 
-	<div class="footer dn">
+	<footer class="footer dn">
 		<p>谢谢浏览~</p>
-	</div>
+	</footer>
+
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>		
 </body>
