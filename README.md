@@ -2,4 +2,5 @@ resume
 ======
 
 在线个人简历
-test
+
+demo：http://hcy2367.github.io/resume/
