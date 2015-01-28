@@ -20,7 +20,7 @@ $(function() {
         $('#impress').fadeIn(1000, function() {
             var api = impress();
             api.init();
-            api.goto('about');
+            // api.goto('about');
         });
     });
 
