@@ -49,7 +49,6 @@ table {
 }
 img {
    max-width: 100%;
-   width: 100%;
    height: auto;
 }
 .video embed, .video object, .video iframe {
